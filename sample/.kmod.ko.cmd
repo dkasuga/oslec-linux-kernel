@@ -1,0 +1,1 @@
+cmd_/home/kasuga/sample/kmod.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /home/kasuga/sample/kmod.ko /home/kasuga/sample/kmod.o /home/kasuga/sample/kmod.mod.o;  true
