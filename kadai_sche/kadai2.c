@@ -29,15 +29,18 @@ main(){
 
     printf("Original Scheduler Policy:");
     check_scheduler_policy(pid);
-    /*
-    param.sched_priority=99;
-    ret = sched_setscheduler(pid_num, SCHED_FIFO, &param);
+
+    param.sched_priority = 99;
+    ret = sched_setscheduler(pid, SCHED_FIFO, &param);
 
     if(ret == -1){
         perror("sched_setscheduler");
-        return -1;
+        return 1;
     }
-    */
+
+    printf("New Scheduler Policy:");
+    check_scheduler_policy(pid);
+
 
     return 0;
 }
