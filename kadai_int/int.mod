@@ -1,0 +1,2 @@
+/home/kasuga/oslec-linux-kernel/kadai_int/int.o
+

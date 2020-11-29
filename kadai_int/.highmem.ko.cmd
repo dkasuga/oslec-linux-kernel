@@ -1,0 +1,1 @@
+cmd_/home/kasuga/oslec-linux-kernel/kadai_memory/highmem.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /home/kasuga/oslec-linux-kernel/kadai_memory/highmem.ko /home/kasuga/oslec-linux-kernel/kadai_memory/highmem.o /home/kasuga/oslec-linux-kernel/kadai_memory/highmem.mod.o;  true
